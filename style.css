@@ -1,0 +1,26 @@
+.image-container{
+    margin: 0;
+}
+.responsive-arrow {
+    width: 10%;
+}
+.responsive-image {
+    width: 100%; /* This will make the image full width of the screen on mobile */
+    height: auto; /* This will keep the aspect ratio of the image */
+    display: block; /* This will prevent inline spacing */
+    margin: 0 auto; /* These two margins allow the image to be centered horizontally */
+    padding: 0;
+    object-fit: contain;
+  }
+
+  @media (min-width: 992px) { /* This media query applies styles for screens that are wider than 992px */
+    .responsive-image {
+      width: 500px; /* This will fix the width of the image to 1000px on desktop screens */
+    }
+    body {
+        background-color: #78C2EB; /* Maintaining the blue background color */
+      }
+    .responsive-arrow{
+        width: 5%;
+    }
+  }
