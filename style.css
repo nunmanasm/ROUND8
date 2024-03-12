@@ -1,8 +1,64 @@
-.image-container{
+body{
+    background-image: url('storyline/mobile_background.png');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Maitree', Arial, sans-serif;
+}
+.scroll-down-arrow {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 24px; 
+    animation: bounce 2s infinite; 
+    z-index: 1000;
+    width: 15%;
+}
+    
+    
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+    }
+    40% {
+    transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+    transform: translateX(-50%) translateY(-10px);
+    }
+}
+.container {
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 20px; /* Adjust padding as needed */
+    width: 80%; /* Adjust width as needed */
+    margin: 40px auto; /* Centers the container */
+    color: black; /* Adjust text color as needed */
+    border: 2px solid #000; /* Optional border */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Optional shadow for effect */
+}
+h3{
+    text-align: center;
     margin: 0;
 }
-.responsive-arrow {
-    width: 10%;
+h5{
+    text-align: center;
+    margin: 0;
+}
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.image-container{
+    margin: 0;
 }
 .responsive-image {
     width: 100%; /* This will make the image full width of the screen on mobile */
@@ -18,9 +74,15 @@
       width: 500px; /* This will fix the width of the image to 1000px on desktop screens */
     }
     body {
-        background-color: #78C2EB; /* Maintaining the blue background color */
+        background-image: url('storyline/background.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Make the background image fixed */
       }
-    .responsive-arrow{
-        width: 5%;
+      .scroll-down-arrow {
+        width: 5%; /* Fixed width for larger screens */
+    }
+    .container{
+        width: 40%;
     }
   }
