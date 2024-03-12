@@ -69,14 +69,6 @@ h5{
     padding: 0;
     object-fit: contain;
   }
-  .scene {
-    width: 100%; /* This will make the image full width of the screen on mobile */
-    height: auto; /* This will keep the aspect ratio of the image */
-    display: block; /* This will prevent inline spacing */
-    margin: 0 auto; /* These two margins allow the image to be centered horizontally */
-    padding: 0;
-    object-fit: contain;
-}
 
   @media (min-width: 992px) { /* This media query applies styles for screens that are wider than 992px */
     .responsive-image {
@@ -93,10 +85,5 @@ h5{
     }
     .container{
         width: 40%;
-    }
-    .scene_block{
-    width: 50%; 
-    height: auto; 
-    float: left;
     }
   }
